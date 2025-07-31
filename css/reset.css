@@ -1,0 +1,34 @@
+/* css 样式重置 */
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* 首选盒子大小值 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 移除列表样式（弹出/数字） */
+ol,
+ul {
+    list-style: none;
+}
+
+/* 使图像无法超过其容器 */
+img {
+    max-width: 100%;
+}
+
+/* 表格单元格之间的间距 */
+table {
+    border-collapse: collapse;
+}
+
+/* 恢复文本域元素的“white-space”属性 */
+textarea {
+    white-space: revert;
+}

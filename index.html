@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>XXXX网站标题</title>
+	<meta name="description" content="这是网站的描述" />
+	<!-- 网站ico 图标 详细见浏览器上方 -->
+	<link rel="icon" href="https://ainomura.com/wp-content/themes/ainomura/appicon/favicon.ico"
+		type="image/vnd.microsoft.icon" />
+
+
+	<!-- 样式重置 css文件 -->
+	<link rel="stylesheet" href="./css/reset.css" />
+	<!-- 轮播图样式 css文件 -->
+	<link rel="stylesheet" href="./css/slider.css" />
+
+	<script>
+		var ADAPT_CONFIG = {
+			path: "./css/",
+			dynamic: true,
+			range: [
+				"0px to 800px = mobile.css"
+			]
+		};
+	</script>
+	<!-- 网站样式 css文件 -->
+	<link rel='stylesheet' id='ainomura-style-css' href='./css/main.css' media='all' />
+
+
+	<!-- jQuery核心库 - 提供基础DOM操作和事件处理 -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js?ver=2.2.4" id="jquery-js"></script>
+	<!-- 响应式适配库 - 处理不同设备屏幕适配 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/adapt.min.js"></script>
+	<!-- Slick轮播图插件 - 实现图片轮播和滑动效果 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/slick.min.js"></script>
+	<!-- 视窗检测插件 - 检测元素是否进入可视区域 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/jquery.inview.min.js"></script>
+	<!-- 滚动停止检测 - 监听滚动结束事件 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/jquery.scrollstop.js"></script>
+	<!-- 滚动吸附效果 - 实现页面滚动时的吸附定位 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/jquery.scrollsnap.js"></script>
+	<!-- 网站通用脚本 - 包含网站自定义功能和交互逻辑 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/common.js"></script>
+</head>
+
+<body class="home wp-singular page-template-default page page-id-8 wp-theme-ainomura">
+
+	<header>
+
+		<!-- 左上文字logo -->
+		<!-- <a href="/#home" class="logo">蓝之村观光株式会社</a> -->
+		<a class="btn_gnav"><span></span></a>
+		<span class="year">Sincs 2025</span>
+
+		<!-- 右下图片logo -->
+		<!-- <img src="./images/loading-logo.png" class="logo_af" /> -->
+	</header>
+
+
+	<!-- 首页大图 -->
+	<div class="sec_kv opening sec" id="home">
+		<h1>这是网站Hero 部分的大标题</h1>
+		<ul>
+			<li>
+				<div class="bg bg1"></div>
+			</li>
+			<li>
+				<div class="bg bg2"></div>
+			</li>
+			<li>
+				<div class="bg bg5"></div>
+			</li>
+			<li>
+				<div class="bg bg4"></div>
+			</li>
+			<li>
+				<div class="bg bg6"></div>
+			</li>
+			<li>
+				<div class="bg bg3"></div>
+			</li>
+		</ul>
+		<a class="btn_scroll" href="#news"><span></span></a>
+	</div>
+	<script>
+
+		setTimeout(function () {
+			setTimeout(function () {
+				jQuery('.sec_kv ul').addClass("act");
+			}, 100);
+			jQuery(".sec_kv ul").slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				speed: 2000,
+				autoplaySpeed: 5000,
+				arrows: false,
+				fade: true,
+				pauseOnFocus: false,
+				pauseOnHover: false,
+			});
+			jQuery(".sec_kv ul").on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+				jQuery('.sec_kv ul').removeClass("act");
+				jQuery('.sec_kv ul').addClass("act");
+			});
+		}, 100);
+	</script>
+
+	<!-- 新闻 -->
+	<div class="sec_news opening sec" id="news">
+		<h2 class="ttl">
+			<div>News<span class="num">5</span></div>
+		</h2>
+		<ul>
+			<li>
+				<a href="javascript:;">
+					<!-- <img class="logo logo_facility5" src="/wp-content/themes/ainomura/img/logo_facility5_wht.png"
+						alt="蓝之村观光株式会社" /> -->
+					<h3 class="sttl">新闻1卡片的标题</h3>
+					<span class="date">2023.04.18</span>
+					<div class="bg"
+						style="background-image: url(https://ainomura.com/wp-content/uploads/2023/04/news5.jpg)"></div>
+				</a>
+			</li>
+
+
+			<li>
+				<a href="javascript:;">
+					<!-- <img class="logo logo_facility5" src="/wp-content/themes/ainomura/img/logo_facility5_wht.png"
+						alt="蓝之村观光株式会社" /> -->
+					<h3 class="sttl">[媒体报道] 刊登在熊本日日新闻晨报上。</h3>
+					<span class="date">2022.01.26</span>
+					<div class="bg"
+						style="background-image: url(./images/gallery-1.jpg)">
+					</div>
+				</a>
+			</li>
+
+
+			<li>
+				<a href="javascript:;">
+					<!-- <img class="logo logo_facility2" src="/wp-content/themes/ainomura/img/logo_facility2_wht.png"
+						alt="度假村露台天草" /> -->
+					<h3 class="sttl">0.01%*稀有地鸡「天草大王」整鸡烤鸡 圣诞...</h3>
+					<span class="date">2021.12.01</span>
+					<div class="bg"
+						style="background-image: url(https://ainomura.com/wp-content/uploads/2021/11/news2.jpg)"></div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<!-- <img class="logo logo_facility5" src="/wp-content/themes/ainomura/img/logo_facility5_wht.png"
+						alt="蓝之村观光株式会社" /> -->
+					<h3 class="sttl">关于「蓝之天草村」「度假村露台天草」的运营方针</h3>
+					<span class="date">2021.12.01</span>
+					<div class="bg"
+						style="background-image: url(https://ainomura.com/wp-content/uploads/2021/11/news3.jpg)"></div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<!-- <img class="logo logo_facility5" src="/wp-content/themes/ainomura/img/logo_facility5_wht.png"
+						alt="蓝之村观光株式会社" /> -->
+					<h3 class="sttl">蓝之村观光株式会社企业网站正式开放</h3>
+					<span class="date">2021.12.01</span>
+					<div class="bg"
+						style="background-image: url(https://ainomura.com/wp-content/uploads/2021/11/news1.jpg)"></div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		/*----- slick -----*/
+		setTimeout(function () {
+			jQuery(".sec_news ul").slick({
+				slidesToShow: 2.3,
+				slidesToScroll: 1,
+				autoplay: false,
+				speed: 500,
+				arrows: true,
+				fade: false,
+				pauseOnFocus: true,
+				pauseOnHover: true,
+				infinite: false,
+				responsive: [
+					{
+						breakpoint: 800,
+						settings: {
+							slidesToShow: 1,
+							arrows: false,
+						}
+					}
+				]
+			});
+		}, 100);
+	</script>
+
+	<!-- 使命 -->
+	<div class="sec_mission opening sec" id="mission">
+		<div class="wrap_img" id="plx01"></div>
+		<div class="wrap_txt">
+			<h2 class="ttl">
+				<div><span class="small">Our</span>Mission</div>
+			</h2>
+			<h3 class="sttl">从<span class="gothic">岛屿</span>到<span class="gothic">世界</span>。<br />吹起<span
+					class="gothic">「全新</span><span class="gothic">旅游</span>的<span class="gothic">风潮」<br
+						class="only_sp" /></span>！</h3>
+			<p>
+				旅游的「光芒」，<br class="only_sp" />应该更加多样化。<br />
+				<br />
+				观光/游玩/美食/住宿・・<br />
+				持续更新升级。<br />
+				<br />
+				在「天草」才能实现的体验的各种可能性中，<br />
+				我们将再次聚焦，<br class="only_sp" />持续创造。<br />
+				<br />
+				我们要从这座岛屿<br class="only_sp" />吹起「全新旅游的风潮」。<br />
+				<br />
+				「岛屿」这个地方本来就是，<br class="only_sp" />无限自由的，<br />
+				轻盈的风吹过的<br class="only_sp" />地方。
+			</p>
+		</div>
+	</div>
+	<script>
+		/*----- parallax -----*/
+		jQuery(function () {
+			var target1 = jQuery("#plx01");
+			var targetPosOT1 = target1.offset().top;
+			var targetFactor = .08;
+			var windowH = jQuery(window).height();
+			var scrollYStart1 = targetPosOT1 - windowH;
+			jQuery(window).on('scroll', function () {
+				var targetPosOT1 = target1.offset().top;
+				var scrollYStart1 = targetPosOT1 - windowH;
+				var scrollY = jQuery(this).scrollTop();
+				if (scrollY > scrollYStart1) {
+					target1.css('background-position-y', (scrollY - targetPosOT1) * targetFactor + 'px');
+				} else {
+					target1.css('background-position', 'center top');
+				}
+			});
+		});
+	</script>
+
+	<!-- 愿景  -->
+	<div class="sec_vision opening sec" id="vision">
+		<div class="wrap_img only_sp" id="plx05"></div>
+		<div class="wrap_txt">
+			<h2 class="ttl">
+				<div><span class="small">Our</span>Vision</div>
+			</h2>
+			<h3 class="sttl">用<span class="gothic">感恩</span>的<span class="gothic">心意</span><br class="only_sp" />以<span
+					class="gothic">笑容</span>相连，<br />成为<span class="gothic">行业<br class="only_sp" />领军企业</span>。
+			</h3>
+			<p>
+				因为是天草，才能看到的风景。<br />
+				<br />
+				我们有幸<br class="only_sp" />扎根于天草这座「岛屿」的<br />
+				宿命与缘分。<br />
+				<br />
+				在这片土地上诞生，扎根，<br />
+				这片风土本身的丰富结出果实，<br />
+				才有了现在的人们和物产。<br />
+				<br />
+				我们对这一切心怀感激，<br />
+				作为比任何人都更<br class="only_sp" />理解其珍贵的当事人，<br />
+				为了真正的笑容，<br class="only_sp" />不断发现，持续进化。
+			</p>
+		</div>
+		<div class="wrap_img only_pc" id="plx02"></div>
+	</div>
+	<script>
+		/*----- parallax -----*/
+		jQuery(function () {
+			var target2 = jQuery("#plx02");
+			var targetPosOT2 = target2.offset().top;
+			var targetFactor = .08;
+			var windowH = jQuery(window).height();
+			var scrollYStart2 = targetPosOT2 - windowH;
+			jQuery(window).on('scroll', function () {
+				var targetPosOT2 = target2.offset().top;
+				var scrollYStart2 = targetPosOT2 - windowH;
+				var scrollY = jQuery(this).scrollTop();
+				if (scrollY > scrollYStart2) {
+					target2.css('background-position-y', (scrollY - targetPosOT2) * targetFactor + 'px');
+				} else {
+					target2.css('background-position', 'center top');
+				}
+			});
+		});
+		jQuery(function () {
+			var target5 = jQuery("#plx05");
+			var targetPosOT5 = target5.offset().top;
+			var targetFactor = .08;
+			var windowH = jQuery(window).height();
+			var scrollYStart5 = targetPosOT5 - windowH;
+			jQuery(window).on('scroll', function () {
+				var targetPosOT5 = target5.offset().top;
+				var scrollYStart5 = targetPosOT5 - windowH;
+				var scrollY = jQuery(this).scrollTop();
+				if (scrollY > scrollYStart5) {
+					target5.css('background-position-y', (scrollY - targetPosOT5) * targetFactor + 'px');
+				} else {
+					target5.css('background-position', 'center top');
+				}
+			});
+		});
+	</script>
+
+	<!-- 方式行动方针 -->
+	<div class="sec_way sec" id="way">
+		<h2 class="ttl opening">
+			<div><span class="small">Our</span>XXXX</div>
+		</h2>
+		<section class="way1 opening">
+			<div class="wrap_img">
+				<h3 class="sttl">Challenge</h3>
+				<div class="bg"></div>
+			</div>
+			<div class="wrap_txt">
+				<span class="num">01</span>
+				<div class="cont">
+					<h4 class="ssttl"><span class="gothic">「挑战」</span><br class="only_sp" />创造<span
+							class="gothic">全新</span>的<span class="gothic">价值</span>。
+					</h4>
+					<p>
+						我们是<br class="only_sp" />被允许挑战的组织。<br />
+						比昨天更好的今天，比今天更好的明天，<br />
+						通过持续不断的挑战，<br />
+						提供超越所有相关人员期待的<br />
+						产品和服务。
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="way2 opening">
+			<div class="wrap_img only_sp">
+				<h3 class="sttl">Thankful</h3>
+				<div class="bg"></div>
+			</div>
+			<div class="wrap_txt">
+				<span class="num">02</span>
+				<div class="cont">
+					<h4 class="ssttl">感恩<span class="gothic">自然</span>的<span class="gothic">恩惠</span>，<br />
+						珍视<span class="gothic">生产者</span>的<span class="gothic">心意</span>。
+					</h4>
+					<p>
+						我们直接运用天草的风土，<br class="only_sp" />以尊重的态度<br />
+						提供能看到生产者面孔的<br />
+						诚实产品。
+					</p>
+				</div>
+			</div>
+			<div class="wrap_img only_pc">
+				<h3 class="sttl">Thankful</h3>
+				<div class="bg"></div>
+			</div>
+		</section>
+		<section class="way3 opening">
+			<div class="wrap_img">
+				<h3 class="sttl">Hospitality</h3>
+				<div class="bg"></div>
+			</div>
+			<div class="wrap_txt">
+				<span class="num">03</span>
+				<div class="cont">
+					<h4 class="ssttl">以<span class="gothic">明</span>朗、<br class="only_pc" /><span
+							class="gothic">愉</span>快、<br class="only_sp" /><span class="gothic">创造性</span>的方式待客。</h4>
+					<p>
+						我们为了让任何客人<br />
+						都能露出笑容，<br />
+						提供充满知识、用心和<br />
+						体贴的服务。
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="way4 opening">
+			<div class="wrap_img only_sp">
+				<h3 class="sttl">Honesty</h3>
+				<div class="bg"></div>
+			</div>
+			<div class="wrap_txt">
+				<span class="num">04</span>
+				<div class="cont">
+					<h4 class="ssttl">对<span class="gothic">周围</span>的<span class="gothic">所有</span><span
+							class="gothic">环境</span><br />
+						做<span class="gothic">「正确</span>的<span class="gothic">事」</span>。
+					</h4>
+					<p>
+						我们感恩在环境中<br />
+						得以生存，<br />
+						正确地进行<br class="only_sp" />无浪费、<br />
+						无勉强的行动。
+					</p>
+				</div>
+			</div>
+			<div class="wrap_img only_pc">
+				<h3 class="sttl">Honesty</h3>
+				<div class="bg"></div>
+			</div>
+		</section>
+		<section class="way5 opening">
+			<div class="wrap_img">
+				<h3 class="sttl">Independent</h3>
+				<div class="bg"></div>
+			</div>
+			<div class="wrap_txt">
+				<span class="num">05</span>
+				<div class="cont">
+					<h4 class="ssttl">用<span class="gothic">自己</span>的<span class="gothic">头脑</span>和<span
+							class="gothic">心灵</span><span class="gothic">思考</span>，<br />
+						以<span class="gothic">多样</span>的<span class="gothic">想法</span>为<span
+							class="gothic">刺激</span>，<br />
+						再向前<span class="gothic">半步</span>。
+					</h4>
+					<p>
+						我们与<br />
+						多样的伙伴相互提升，<br />
+						始终带着假设<br class="only_sp" />面对课题解决。
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- 代表致辞 -->
+	<div class="sec_message opening sec" id="message">
+		<h2 class="ttl">
+			<div><span class="small">Representative</span>Message</div>
+		</h2>
+		<div class="wrap_txt">
+			<h3 class="sttl"><span class="gothic en">Local × New Elements</span><br /><span
+					class="gothic">风</span>在<span class="gothic">吹</span>拂，<br class="only_sp" /><span
+					class="gothic">丰富</span>的<span class="gothic">人生</span><span class="gothic">旅程</span><span
+					class="gothic">诞生</span>。</h3>
+			<p>
+				蓝之村观光株式会社是一家经营「旅游」的公司。<br />
+				<br />
+				我们致力于让这个「旅游」本身<br />
+				变得更加多样化。<br />
+				<br />
+				我们扎根上天草这片土地即将70年。<br />
+				旅游业和旅行方式都发生了巨大变化。<br />
+				而现在，旅行不仅仅是观光，<br />
+				已经成为影响人生本身的存在。<br />
+				<br />
+				Local × New Elements<br />
+				<br />
+				我们希望像自由吹过<br />
+				由100多座岛屿连成的天草诸岛的风一样，<br />
+				与未曾见过的风景和真正的自己相遇，<br />
+				为您带来全新人生旅程的开始。
+			</p>
+			<div class="name">
+				<!-- <span class="small">蓝之村观光株式会社</span>
+				代表取締役社长　<br class="only_sp" />藤川 护章 -->
+			</div>
+			<img src="./images/sign-message.png" class="message_sign" alt="蓝之村观光株式会社 代表取締役社长　藤川 护章" />
+		</div>
+		<div class="bg" id="plx03"></div>
+	</div>
+	<script>
+		/*----- parallax -----*/
+		jQuery(function () {
+			var target3 = jQuery("#plx03");
+			var targetPosOT3 = target3.offset().top;
+			var targetFactor = -.04;
+			var windowH = jQuery(window).height();
+			var scrollYStart3 = targetPosOT3 - windowH;
+			jQuery(window).on('scroll', function () {
+				var targetPosOT3 = target3.offset().top;
+				var scrollYStart3 = targetPosOT3 - windowH;
+				var scrollY = jQuery(this).scrollTop();
+				if (scrollY > scrollYStart3) {
+					target3.css('bottom', (scrollY - targetPosOT3) * targetFactor + 'px');
+				} else {
+					target3.css('bottom', '0');
+				}
+			});
+		});
+	</script>
+
+	<!-- 业务 -->
+	<div class="sec_business sec" id="business">
+		<h2 class="ttl opening">
+			<div><span class="small">Our</span>Business</div>
+		</h2>
+		<section class="business1 opening">
+			<div class="wrap_img only_sp"></div>
+			<div class="wrap_txt">
+				<h3 class="sttl">汇聚欢乐的“岛屿专门店”</h3>
+
+				<p>
+					“天草最大级别的土特产专门店”的蓝之天草村，备有天草产的干货和海胆，以及大受欢迎的「大渔烧」「盐海苔」、当地名点心、酒类等，坚持产地直销的多种多样的天草美味。奢侈使用天草产真鲷制作的「天草四郎竹轮」，在附设工厂现烤现送。除了土特产，还有「岛屿咖啡厅」和亚洲杂货店等，是充满岛屿欢乐的娱乐园区。以日本最大的「天草四郎像」为标志。
+				</p>
+			</div>
+			<div class="wrap_img only_pc"></div>
+		</section>
+		<section class="business2 opening">
+			<div class="wrap_img only_sp"></div>
+			<div class="wrap_txt">
+				<h3 class="sttl">为所有人带来“特别的日子”</h3>
+
+				<p>
+					“天草的度假综合设施「度假村露台天草」，拥有全席海景餐厅、原创甜品、天草土特产市场、
+					使用天草产釜煮盐由工匠烘焙的盐面包深受欢迎的面包房、奢侈使用当地食材制作正宗意式冰淇淋的咖啡厅等，可以尽情享受各种乐趣。海豚观赏和天草五桥游轮可从眼前的码头出发。
+				</p>
+			</div>
+			<div class="wrap_img only_pc"></div>
+		</section>
+		<section class="business5 opening">
+			<div class="wrap_img only_sp"></div>
+			<div class="wrap_txt">
+				<h3 class="sttl">什么都没有，却拥有一切的岛屿</h3>
+
+				<p>
+					眺望天草海景的全18间客房度假酒店。所有客房都是海景房，窗外是无边无际的蔚蓝大海和天空。館内には、3種類のサウナとインフィニティプールを備えた着衣型スパがあり、日帰りでも気軽にリラックスを楽しめます。さらに、天草の食材を活かしたフォーやサンドイッチ、スパイス香るアジアンカレーが味わえるアジアンカフェも併設。宿泊でも、日帰りでも、思い思いのスタイルで特別なひとときをお過ごしください。
+				</p>
+			</div>
+			<div class="wrap_img only_pc"></div>
+		</section>
+		<section class="business3 opening">
+			<div class="wrap_img only_sp"></div>
+			<div class="wrap_txt">
+				<h3 class="sttl">分享岛屿的恩惠</h3>
+
+				<p>
+					自然豊かな熊本・天草ならではの商品をお届けする「L’isola
+					Village(リゾラヴィレッジ)」公式通販サイトです。天草活き車海老や旬の野菜・果実をはじめ、地元生産者さんと協力し開発したオリジナル商品などこだわりが詰まった商品を全国へ発信。お中元・お歳暮ギフトとしてもご好評頂いております。
+				</p>
+			</div>
+			<div class="wrap_img only_pc"></div>
+		</section>
+		<section class="business4 opening">
+			<div class="wrap_img only_sp"></div>
+			<div class="wrap_txt">
+				<h3 class="sttl">完全无农药的自营农园</h3>
+
+				<p>
+					熊本県上天草市にある、藍の村観光の自社農園です。土づくりからスタートしたこの農園では、完全無農薬栽培にこだわり、さまざまな野菜やフルーツ・ハーブを育てています。ここで収穫される旬の野菜やハーブ、フルーツは、「リゾラテラス天草」内にあるレストランにて、旬のサラダやバーニャカウダ・ピッツアや季節のスープ・パフェとしてご提供しています。また、この農園で収穫した無農薬バジルを使用したオリジナルのバジルソース開発など６次産業化にむけての取り組みも行っております。
+				</p>
+				<!-- <a href="//kikaku80.wixsite.com/lisolafarm" target="_blank"
+					class="link">kikaku80.wixsite.com/lisolafarm</a> -->
+			</div>
+			<div class="wrap_img only_pc"></div>
+		</section>
+	</div>
+
+	<!-- 风景	 -->
+	<div class="sec_landscape opening sec" id="landscape">
+		<div class="wrap_img" id="plx04"></div>
+	</div>
+	<script>
+		/*----- parallax -----*/
+		jQuery(function () {
+			var target4 = jQuery("#plx04");
+			var targetPosOT4 = target4.offset().top;
+			var targetFactor = .08;
+			var windowH = jQuery(window).height();
+			var scrollYStart4 = targetPosOT4 - windowH;
+			jQuery(window).on('scroll', function () {
+				var targetPosOT4 = target4.offset().top;
+				var scrollYStart4 = targetPosOT4 - windowH;
+				var scrollY = jQuery(this).scrollTop();
+				if (scrollY > scrollYStart4) {
+					target4.css('background-position-y', (scrollY - targetPosOT4) * targetFactor + 'px');
+				} else {
+					target4.css('background-position', 'center top');
+				}
+			});
+		});
+	</script>
+
+	<!-- 历史 -->
+	<div class="sec_history opening sec" id="history">
+		<a href="./history.html" class="bnr">
+			<div class="wrap_ttl">
+				<h2 class="ttl">
+					<div><span class="small">Our</span>History</div>
+				</h2>
+			</div>
+			<div class="wrap_txt">
+				<p>
+					从船舶到汽车。<br class="only_sp" />从离岛到桥梁连接的群岛。<br />
+					伴随着天草的发展，<br class="only_sp" />持续新的挑战<br class="only_pc" />
+					为您介绍我们的历史。
+				</p>
+			</div>
+			<div class="bg"></div>
+			<span class="btn_more">MORE</span>
+		</a>
+	</div>
+
+	<!-- 天草 -->
+	<div class="sec_amakusa opening sec" id="amakusa">
+		<h2 class="ttl">
+			<div><span class="small">About</span>Amakusa</div>
+		</h2>
+		<img src="./images/map.jpg" alt="天草地图" class="map only_sp" />
+		<div class="wrap_txt">
+			<p>
+				位于熊本县的天草，是由大小120多座岛屿组成的大型群岛，整体被指定为云仙天草国立公园，是著名的风景胜地。<br />
+				<br />
+				这片土地自史前时代就有人居住，隔海成为文化中转站，后来成为信仰堡垒，作为拥有独特风土、留存历史痕迹的岛屿，吸引了众多知识分子。<br />
+				<br />
+				天草というと「キリシタン」というイメージがあると思いますが、藍の村観光株式会社がある上天草市大矢野町は、天草四郎の生まれ故郷と伝えられており、<br />
+				多くの言い伝えや足跡が残されている場所としても有名です。<br />
+				<br />
+				何よりも一年を通して温暖な気候に恵まれるこの土地は、豊かな海の幸（紫雲丹、車海老、牡蠣、海苔、鯛など）山の幸（デコポン、晩柑、レモン、オリーブ、塩トマトなど）など食も楽しく、また豊かな温泉（上天草温泉郷・天草下田温泉）や、天草陶磁器巡り（全国の陶石生産量の８割が天草産）、イルカウォッチングなどさまざまなアクティビティも楽しめる場所として、九州のみならず沢山の観光客がいらっしゃっています。
+			</p>
+		</div>
+		<div class="bg"></div>
+	</div>
+
+	<div class="sec_gallery opening sec">
+		<ul>
+			<li><a href="javascript:xGallery('id_34');"
+					style="background-image: url(./images/gallery-1.jpg)">从度假村露台天草看到的日落</a>
+			</li>
+			<li><a href="javascript:xGallery('id_30');" style="background-image: url(./images/gallery-1.jpg)">海豚观赏游轮</a>
+			</li>
+			<li><a href="javascript:xGallery('id_31');"
+					style="background-image: url(./images/gallery-1.jpg)">海上皮划艇之旅</a>
+			</li>
+			<li><a href="javascript:xGallery('id_32');"
+					style="background-image: url(./images/gallery-1.jpg)">海上皮划艇之旅</a>
+			</li>
+			<li><a href="javascript:xGallery('id_33');"
+					style="background-image: url(./images/gallery-1.jpg)">海上皮划艇之旅</a>
+			</li>
+			<li><a href="javascript:xGallery('id_29');"
+					style="background-image: url(./images/gallery-1.jpg)">裙带菜天然晾晒</a>
+			</li>
+			<li><a href="javascript:xGallery('id_51');"
+					style="background-image: url(./images/gallery-1.jpg)">天主教崎津教会外观</a>
+			</li>
+			<li><a href="javascript:xGallery('id_53');"
+					style="background-image: url(./images/gallery-1.jpg)">XXXXXXXXXXX</a>
+			</li>
+			<li><a href="javascript:xGallery('id_55');"
+					style="background-image: url(./images/gallery-1.jpg)">XXXXXXXXXXX</a>
+			</li>
+			<li><a href="javascript:xGallery('id_56');"
+					style="background-image: url(./images/gallery-1.jpg)">XXXXXXXXXXX</a>
+			</li>
+			<li><a href="javascript:xGallery('id_57');"
+					style="background-image: url(./images/gallery-1.jpg)">XXXXXXXXXXX</a>
+			</li>
+			<li><a href="javascript:xGallery('id_59');"
+					style="background-image: url(./images/gallery-1.jpg)">XXXXXXXXXXX</a>
+			</li>
+		</ul>
+		<div class="popup" id="id_34"><img src="./images/gallery-1.jpg" alt="从度假村露台天草看到的日落" />
+			<div class="caption">
+				<p>从度假村露台天草看到的日落</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_30"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_31"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换 " />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_32"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_33"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_29"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_51"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换 " />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_53"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_55"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_56"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_57"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+		<div class="popup" id="id_59"><img src="./images/gallery-1.jpg" alt="占位文本,后续更换" />
+			<div class="caption">
+				<p>占位文本,后续更换</p>
+			</div>
+			<div class="overlay"></div><a class="btn_close"></a>
+		</div>
+	</div>
+	<script>
+		/*----- slick -----*/
+		setTimeout(function () {
+			jQuery(".sec_gallery ul").slick({
+				slidesToShow: 4.5,
+				slidesToScroll: 1,
+				autoplay: false,
+				speed: 500,
+				arrows: true,
+				fade: false,
+				pauseOnFocus: true,
+				pauseOnHover: true,
+				infinite: false,
+				rows: 2,
+				responsive: [
+					{
+						breakpoint: 800,
+						settings: {
+							slidesToShow: 2.6,
+							arrows: false,
+							rows: 3,
+						}
+					}
+				]
+			});
+		}, 100);
+		/*----- popup -----*/
+		function xGallery(imgid) {
+			jQuery('.sec_gallery .popup').fadeOut(200).removeClass('act');
+			jQuery('#' + imgid).fadeIn(200).addClass('act');
+		}
+		jQuery(".sec_gallery .popup .overlay, .sec_gallery .popup .btn_close").click(function () {
+			jQuery('.sec_gallery .popup').fadeOut(200).removeClass('act');
+		});
+		/*----- inview -----*/
+		jQuery(".sec_kv").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_kv").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_news").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_news").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_mission").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_mission").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_vision").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_vision").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .ttl").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .ttl").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .way1").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .way1").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .way2").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .way2").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .way3").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .way3").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .way4").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .way4").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_way .way5").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_way .way5").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_message").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_message").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .ttl").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .ttl").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .business1").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .business1").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .business2").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .business2").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .business3").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .business3").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .business4").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .business4").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_business .business5").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_business .business5").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_landscape").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_landscape").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_history").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_history").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_amakusa").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_amakusa").removeClass("opening");
+				}, 500);
+			}
+		});
+		jQuery(".sec_gallery").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery(".sec_gallery").removeClass("opening");
+				}, 500);
+			}
+		});
+	</script>
+
+
+	<!-- 底部footer    -->
+	<footer class="opening">
+		<div class="top">
+			<div class="wrap_company">
+				<p class="ttl"><span>Company</span></p>
+				<dl>
+					<dt>公司名称</dt>
+					<dd>蓝之村观光株式会社</dd>
+					<dt>创业</dt>
+					<dd>1955年(藤川商店开业)</dd>
+					<dt>成立</dt>
+					<dd>1989年7月14日</dd>
+					<dt>代表</dt>
+					<dd>代表取締役　藤川 护章</dd>
+					<dt>所在地</dt>
+					<dd>〒869-3601<br />熊本県上天草市大矢野町登立910</dd>
+				</dl>
+				<div class="wrap_sdgs">
+					<div class="wrap_img">
+						<img src="./images/sdgs-logo.svg" alt="SDGS Logo" width="154" height="233">
+
+					</div>
+					<div class="wrap_txt">
+						作为熊本县SDGs注册事业者，蓝之村观光积极致力于SDGs。
+					</div>
+				</div>
+			</div>
+			<div class="wrap_shop">
+				<p class="ttl"><span>Shop</span></p>
+				<dl>
+					<dt>店铺名称</dt>
+					<dd>蓝之天草村</dd>
+					<dt>所在地</dt>
+					<dd>〒869-3601<br />熊本県上天草市大矢野町登立910</dd>
+					<dt>电话号码</dt>
+					<dd><a href="tel:0964-56-5151" class="tel">0964-56-5151</a></dd>
+					<dt>HP</dt>
+					<dd><a href="http://www.amakusamura.jp" target="_blank" class="link">www.amakusamura.jp</a></dd>
+					<dt>休息日</dt>
+					<dd>12月31日・1月1日的2天</dd>
+					<dt>营业时间</dt>
+					<dd>
+						<dl>
+							<dt>10月～3月</dt>
+							<dd>9:00～18:00</dd>
+							<dt>3月～9月</dt>
+							<dd>9:00～18:00</dd>
+							<dt>仅8月</dt>
+							<dd>8:30～19:00</dd>
+						</dl>
+						<p class="ant">
+							※ 4月～9月的周日・节假日营业时间延长30分钟<br />
+							※ 黄金周・新年・盂兰盆节有时间延长<br />
+							※ 营业时间可能有变动，详情请随时咨询。
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>店铺名称</dt>
+					<dd>度假村露台天草</dd>
+					<dt>所在地</dt>
+					<dd>〒861-6102<br />熊本県上天草市松島町会津字北6215-16</dd>
+					<dt>电话号码</dt>
+					<dd><a href="tel:0969-56-3450" class="tel">0969-56-3450</a></dd>
+					<dt>HP</dt>
+					<dd><a href="//www.lisolaterrace.com" target="_blank" class="link">www.lisolaterrace.com</a></dd>
+					<dt>休息日</dt>
+					<dd>12月31日・1月1日的2天</dd>
+					<dt>营业时间</dt>
+					<dd>
+						<section>
+							<span class="sttl">度假村市场、天草盐面包实验室、岛屿商店、岛屿风格</span>
+							<p>平日 9:00～17:00<br class="only_sp" /><span class="only_pc"> / </span>周末节假日 9:00～17:30</p>
+						</section>
+						<section>
+							<span class="sttl">盘子咖啡厅度假村</span>
+							<p>
+								平日 11:00～21:00(20:00 最后点餐)<br />
+								周末节假日 10:30～21:00(20:00 最后点餐)
+							</p>
+						</section>
+						<section>
+							<span class="sttl">度假村海滩酒吧</span>
+							<p>平日 10:00～16:00<br class="only_sp" /><span class="only_pc"> / </span>周末节假日 10:00～17:00</p>
+						</section>
+						<p class="ant">
+							※ 营业时间可能有变动，详情请随时咨询。
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>店铺名称</dt>
+					<dd>度假村鸟屿</dd>
+					<dt>所在地</dt>
+					<dd>〒869-3602<br />熊本県上天草市大矢野町上5252-44</dd>
+					<dt>电话号码</dt>
+					<dd><a href="tel:0964-27-5757" class="tel">0964-27-5757</a></dd>
+					<dt>HP</dt>
+					<dd><a href="javascript:void(0);" target="_blank" class="link">lisolathebird.com</a></dd>
+					<dt>休息日</dt>
+					<dd>无</dd>
+					<dt>营业时间</dt>
+					<dd>
+						<section>
+							<p>
+								入住 15:00〜<br>
+								退房 11:00
+							</p>
+						</section>
+						<section>
+							<span class="sttl">亚洲咖啡厅岛屿通讯</span>
+							<p>
+								11:00〜18:00(17:00 最后点餐)
+							</p>
+						</section>
+					</dd>
+				</dl>
+			</div>
+			<a href="//amakusa.online" target="_blank" class="bnr_village">
+				<img class="logo logo_facility3" src="./images/footer-text-1.png" alt="度假村村庄 岛屿的礼物" />
+				<p>在线商店</p>
+			</a>
+			<a href="https://note.com/kamiamakusa_stay/" target="_blank" class="bnr_village bnr_village2">
+				<img class="logo logo_facility4" src="./images/footer-text-2.png" alt="工作度假信息" />
+				<p>工作度假信息</p>
+			</a>
+		</div>
+		<div class="bottom">
+			<div class="cont">
+				<ul>
+					<!--<li><a href="/recruit">採用情報</a></li>-->
+					<li><a href="./privacypolicy.html">隐私政策</a></li>
+					<li><a href="./contact.html">联系我们</a></li>
+				</ul>
+				<p class="cpr">©︎ Ainomurakanko inc.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		/*----- inview -----*/
+		jQuery("footer").on("inview", function (event, isInView) {
+			if (isInView) {
+				setTimeout(function () {
+					jQuery("footer").removeClass("opening");
+				}, 500);
+			}
+		});
+	</script>
+
+	<div class="gnav">
+		<a href="./index.html#home" class="logo">蓝之村观光株式会社</a>
+		<div class="cont">
+			<nav class="nav1">
+				<ul>
+					<li><a href="#news"><span class="small">5</span>News</a></li>
+					<li><a href="#mission"><span class="small">Our</span>Mission</a></li>
+					<li><a href="#vision"><span class="small">Our</span>Vision</a></li>
+					<li><a href="#way"><span class="small">Our</span>Way</a></li>
+					<li><a href="#message"><span class="small">Representative</span>Message</a></li>
+					<li><a href="#business"><span class="small">Our</span>Business</a></li>
+					<li><a href="#history"><span class="small">Our</span>History</a></li>
+					<li><a href="#amakusa"><span class="small">About</span>Amakusa</a></li>
+				</ul>
+			</nav>
+			<nav class="nav2">
+				<ul>
+					<!--<li><a href="/recruit">採用情報</a></li>-->
+					<li><a href="./privacypolicy.html">隐私政策</a></li>
+					<li><a href="./contact.html">联系我们</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="overlay"></div>
+		<!--<a class="btn_close"></a>-->
+		<img src="/wp-content/themes/ainomura/img/logo_af@3x.png" class="logo_af" />
+	</div>
+
+	<div class="loader">
+		<div class="logo"></div>
+	</div>
+
+
+	<!-- WordPress Polyfill - 为旧版浏览器提供现代JavaScript功能兼容性支持 -->
+	<!-- 包含Promise、fetch、Object.assign等现代API的兼容实现 -->
+	<script src="https://ainomura.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+		id="wp-polyfill-js"></script>
+
+
+	<!-- 网站导航脚本 - 处理菜单展开/收起、移动端导航等交互功能 -->
+	<script src="https://ainomura.com/wp-content/themes/ainomura/js/navigation.js?ver=1.0.4"
+		id="ainomura-navigation-js"></script>
+
+
+
+</body>
+
+</html>

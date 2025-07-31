@@ -1,0 +1,940 @@
+@charset "utf-8";
+
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: "中ゴシックBBB", Gothic Medium BBB, "A-OTF 中ゴシックBBB Pro";
+font-family: "しまなみ", Shimanami, "A P-OTF しまなみ StdN";
+*/
+
+/*========================= common =========================*/
+
+* {
+    outline: none;
+}
+a:hover {
+    color: #151C2D;
+}
+img {
+    display: block;
+    width: 100%; height: auto;
+}
+input, button, select, textarea {
+    -webkit-appearance: none;
+}
+.only_pc {
+    display: none !important;
+}
+.only_sp {
+    display: block !important;
+}
+.btn_scroll {
+    bottom: 24px;
+    transform: scale(.8);
+}
+.btn_scroll:hover {
+    border-color: #fff;
+}
+.btn_scroll:hover span {
+    background: #fff;
+}
+
+/*========================= loader =========================*/
+
+.loader .logo {
+    margin: -72px 0 0 -72px;
+    width: 144px; height: 144px;
+}
+.loader:after {
+    bottom: 15px; right: 15px;
+}
+
+/*========================= header =========================*/
+
+header .logo {
+    top: 48px; left: 16px;
+    width: 13px; height: 156px;
+}
+header .btn_gnav {
+    top: 24px; right: 16px;
+}
+.home.scroll header .btn_gnav:hover span,
+.home.scroll header .btn_gnav:hover:before,
+.home.scroll header .btn_gnav:hover:after {
+    background: #151C2D !important;
+}
+header .btn_gnav:hover span,
+header .btn_gnav:hover:before,
+header .btn_gnav:hover:after,
+.page-id-7 header .btn_gnav:hover span,
+.page-id-7 header .btn_gnav:hover:before,
+.page-id-7 header .btn_gnav:hover:after {
+    background: #fff !important;
+}
+.home.scroll header .btn_gnav.act:before,
+.home.scroll header .btn_gnav.act:after {
+    background: #fff !important;
+}
+header .year {
+    bottom: 36px; left: 16px;
+    font-size: 1rem;
+}
+header .logo_af {
+    bottom: 36px; right: 16px;
+    height: 66px;
+}
+
+/*========================= footer =========================*/
+
+footer {
+    margin: 0;
+}
+footer .top {
+    width: auto;
+}
+footer .top .wrap_company,
+footer .top .wrap_shop {
+    float: none;
+    margin: 0 50px 80px;
+    width: auto;
+}
+footer .top .wrap_company .wrap_sdgs {
+	width: auto;
+}
+footer .top .wrap_company .wrap_sdgs .wrap_img {
+	width: 64px;
+}
+footer .top .wrap_company .wrap_sdgs .wrap_img svg {
+	width: 64px;
+}
+footer .top .wrap_company .wrap_sdgs .wrap_txt {
+	font-size: 1.3rem;
+}	
+footer .top .ttl {
+    margin-bottom: 32px;
+    font-size: 2.8rem;
+}
+footer.opening .ttl span {
+    transform: scale(1.1) rotate(-8deg);
+}
+footer .top dl dt {
+    padding-top: 4px;
+    font-size: 1rem;
+}
+footer .top dl dd {
+    margin-bottom: 6px;
+    margin-left: 64px;
+    font-size: 1.4rem;
+}
+footer .top dl dd dl dt {
+    font-size: 1.4rem;
+}
+footer .top dl dd dl dd {
+    margin-left: 72px;
+}
+footer .top dl dd section {
+    margin-bottom: 6px;
+}
+footer .top dl dd section .sttl {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+footer .top dl dd .ant {
+    font-size: 1rem;
+}
+footer .top dl dd .only_pc {
+    display: none !important;
+}
+footer .top .bnr_village {
+    position: relative;
+    bottom: auto; left: auto;
+    margin: 0 25px;
+    width: auto; height: 72px;
+    line-height: 70px;
+}
+footer .top .bnr_village:hover {
+    border-color: #DCE5F0;
+    color: #151C2D;
+}
+footer .top .bnr_village .logo {
+    margin: 23px 8% 0 12%;
+    width: 40%;
+}
+footer .top .bnr_village p {
+    font-size: 1.1rem;
+}
+footer .top .bnr_village.bnr_village2 {
+    margin-top: 24px;
+    bottom: 0;
+}
+footer .top .bnr_village.bnr_village2 .logo {
+	margin-top: 29px;
+}
+footer .bottom {
+    border-top: 1px solid #DCE5F0;
+}
+footer .bottom .cont {
+    margin: 0;
+    width: auto;
+    line-height: 48px;
+}
+footer .bottom .cont ul {
+    float: none;
+}
+footer .bottom .cont ul li {
+    display: block;
+    margin-right: 0;
+    border-bottom: 1px solid #DCE5F0;
+}
+footer .bottom .cont ul li a {
+    display: block;
+    position: relative;
+    padding: 0 50px;
+    font-size: 1.4rem;
+}
+footer .bottom .cont ul li a:after {
+    content: "";
+    position: absolute;
+    top: 50%; right: 25px;
+    margin-top: -6px;
+    width: 6px; height: 12px;
+    background: url("../images/arrow-icon.png") center no-repeat;
+    background-size: contain;
+}
+footer .bottom .cont .cpr {
+    margin: 0 25px;
+    padding: 40px 0;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/*========================= gnav =========================*/
+
+.gnav .logo {
+    top: 48px; left: 16px;
+    width: 13px; height: 156px;
+}
+.gnav .cont .nav1 {
+    top: 0; bottom: 0; left: 0;
+    padding: 96px 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: none;
+}
+.gnav .cont .nav1 ul {
+    display: inline-block;
+    text-align: left;
+}
+.gnav .cont .nav1 ul li {
+    float: none;
+    margin: 0 0 24px;
+    width: auto;
+}
+.gnav .cont .nav1 ul li a {
+    font-size: 4rem;
+}
+.gnav .cont .nav1 ul li a:hover {
+    color: #fff;
+}
+.gnav .cont .nav1 ul li a .small {
+    font-size: 1.2rem;
+}
+.gnav .btn_close {
+    top: 24px; right: 4.267%;
+}
+.gnav .cont .nav2 {
+    display: none;
+}
+.gnav .logo_af {
+    display: none;
+}
+
+/*========================= sec_kv =========================*/
+
+.sec_kv h1 {
+    top: auto; bottom: 25.276%; left: 50px;
+    margin-top: 0;
+    font-size: 4.2rem;
+}
+.sec_kv.opening h1 {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+
+/*========================= sec_news =========================*/
+
+.sec_news {
+    padding: 132px 0 140px;
+}
+.sec_news .ttl {
+    margin: 0 50px 20px;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+.sec_news.opening .ttl div {
+    transform: scale(1.1) rotate(-8deg);;
+}
+.sec_news .ttl .num {
+    padding-left: 2px;
+    font-size: 1rem;
+}
+.sec_news ul {
+    margin: 0 38px 24px;
+    width: auto;
+}
+.sec_news ul li {
+    padding: 0 12px;
+}
+.sec_news ul li a:hover {
+    transform: none;
+}
+.sec_news ul li a .ico_new {
+    top: 25px; right: 25px;
+    font-size: 1.5rem;
+}
+.sec_news ul li a .logo {
+    top: 25px; left: 25px;
+    transform: scale(.8);
+    transform-origin: 0;
+}
+.sec_news ul li a .sttl {
+    right: 25px; bottom: 52px; left: 25px;
+    font-size: 1.9rem;
+}
+.sec_news ul li a .date {
+    bottom: 20px; left: 25px;
+    font-size: 1rem;
+}
+.sec_news .btn_more {
+    margin-right: 50px;
+    font-size: 1.4rem;
+}
+
+/*========================= sec_mission =========================*/
+
+.sec_mission {
+    display: block;
+    padding-top: 0;
+}
+.sec_mission .wrap_img,
+.sec_mission .wrap_txt {
+    display: block;
+}
+.sec_mission .wrap_img {
+    width: auto; height: 600px;
+    /* background: url("https://placehold.co/1200x800") center top no-repeat;
+    background-size: cover; */
+}
+.sec_mission .wrap_txt {
+    padding: 180px 50px;
+    width: auto;
+}
+.sec_mission .wrap_txt .ttl {
+    margin-bottom: 120px;
+    font-size: 5.2rem;
+}
+.sec_mission.opening .wrap_txt .ttl div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_mission .wrap_txt .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_mission .wrap_txt .sttl {
+    margin-bottom: 40px;
+    font-size: 2.9rem;
+}
+.sec_mission .wrap_txt p {
+    font-size: 1.6rem;
+}
+
+/*========================= sec_vision =========================*/
+
+.sec_vision {
+    display: block;
+    margin: 0;
+    padding-top: 0;
+    width: auto;
+}
+.sec_vision .wrap_img,
+.sec_vision .wrap_txt {
+    display: block;
+}
+.sec_vision .wrap_img {
+    width: auto; height: 600px;
+    background: url("https://placehold.co/1200x800") center top no-repeat;
+    background-size: cover;
+}
+.sec_vision .wrap_txt {
+    padding: 180px 50px 0;
+    width: auto;
+}
+.sec_vision .wrap_txt .ttl {
+    margin-bottom: 120px;
+    font-size: 5.2rem;
+}
+.sec_vision.opening .wrap_txt .ttl div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_vision .wrap_txt .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_vision .wrap_txt .sttl {
+    margin-bottom: 40px;
+    font-size: 2.9rem;
+}
+.sec_vision .wrap_txt p {
+    font-size: 1.6rem;
+}
+
+/*========================= sec_way =========================*/
+
+.sec_way {
+    padding-top: 180px;
+    text-align: left;
+}
+.sec_way .ttl {
+    margin: 0 50px 36px;
+    font-size: 5.2rem;
+}
+.sec_way .ttl.opening div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_way .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_way section {
+    display: block;
+    min-height: auto;
+    text-align: center;
+}
+.sec_way section .wrap_img,
+.sec_way section .wrap_txt {
+    display: block;
+    width: auto;
+}
+.sec_way section .wrap_img {
+    padding-top: 100%;
+}
+.sec_way section .wrap_img.only_pc {
+    display: none !important;
+}
+.sec_way section .wrap_img .sttl {
+    top: 50%; left: 0;
+    margin-top: -20px;
+    font-size: 4rem;
+}
+.sec_way .way1 .wrap_img .bg {
+    background-image: url("https://placehold.co/1200x600");
+}
+.sec_way .way2 .wrap_img .bg {
+    background-image: url("https://placehold.co/1200x600");
+}
+.sec_way .way3 .wrap_img .bg {
+    background-image: url("https://placehold.co/1200x600");
+}
+.sec_way .way4 .wrap_img .bg {
+    background-image: url("https://placehold.co/1200x600");
+}
+.sec_way .way5 .wrap_img .bg {
+    background-image: url("https://placehold.co/1200x600");
+}
+.sec_way section .wrap_txt {
+    padding: 120px 0;
+}
+.sec_way section .wrap_txt .num {
+    top: 28px; left: 25px;
+    font-size: 1.4rem;
+}
+.sec_way section .wrap_txt .cont .ssttl {
+    font-size: 2.4rem;
+}
+.sec_way section .wrap_txt .cont p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+/*========================= sec_message =========================*/
+
+.sec_message {
+    padding-top: 180px;
+    border-top: 1px solid #DCE5F0;
+}
+.sec_message .ttl {
+    margin: 0 50px 80px;
+    width: auto;
+    font-size: 4.3rem;
+}
+.sec_message.opening .ttl div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_message .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_message .wrap_txt {
+    margin: 0 50px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    width: auto;
+}
+.sec_message .wrap_txt .sttl {
+    margin-bottom: 80px;
+    font-size: 2.4rem;
+}
+.sec_message .wrap_txt p {
+    margin-bottom: 180px;
+    font-size: 1.6rem;
+}
+.sec_message .wrap_txt .name {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.sec_message .wrap_txt .name .small {
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+.sec_message .wrap_txt .message_sign {
+    position: static;
+    margin-left: -20px;
+    width: 150px;
+}
+.sec_message .bg {
+    position: absolute;
+    bottom: 0; left: auto; right: -390px;
+    margin-bottom: -30px;
+    width: 621px; height: 482px;
+    background: url("../images/profile-bg.jpg") center bottom no-repeat;
+    background-size: contain;
+}
+
+/*========================= sec_business =========================*/
+
+.sec_business {
+    padding: 180px 0 120px;
+}
+.sec_business .ttl {
+    margin: 0 50px 48px;
+    width: auto;
+    font-size: 4.3rem;
+}
+.sec_business .ttl.opening div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_business .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_business section {
+    display: block;
+    margin: 0;
+    width: auto;
+}
+.sec_business section .wrap_txt,
+.sec_business section .wrap_img {
+    display: block;
+}
+.sec_business section .wrap_txt {
+    padding: 60px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.sec_business section .wrap_txt .sttl {
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+.sec_business section .wrap_txt .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    transform: scale(.7);
+}
+.sec_business section .wrap_txt p {
+    margin: 0 25px 12px;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.sec_business section .wrap_txt .link {
+    float: right;
+    margin: 0 25px;
+    font-size: 1.1rem;
+}
+.sec_business section .wrap_txt .link:hover {
+    background-image: url("../images/arrow-icon.png");
+}
+.sec_business section .wrap_img {
+    padding-top: 50%;
+    width: auto; height: auto;
+}
+
+/*========================= sec_landscape =========================*/
+
+.sec_landscape {
+    padding-top: 0;
+    height: 600px;
+}
+.sec_landscape .wrap_img {
+    background-image: url("https://placehold.co/1200x600");
+    background-size: cover;
+}
+
+/*========================= sec_history =========================*/
+
+.sec_history {
+    padding-top: 180px;
+}
+.sec_history .bnr {
+    display: block;
+    margin: 0 25px;
+    padding: 0 50px;
+    padding-top: 108px;
+    width: auto; height: auto;
+    box-sizing: border-box;
+}
+.sec_history .bnr .wrap_ttl,
+.sec_history .bnr .wrap_txt {
+    display: block;
+    width: auto;
+}
+.sec_history .bnr .wrap_ttl {
+    margin-bottom: 40px;
+    text-align: left;
+}
+.sec_history .bnr .wrap_ttl .ttl {
+    display: block;
+    margin-top: 0;
+    font-size: 4.8rem;
+}
+.sec_history.opening .bnr .wrap_ttl .ttl div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_history .bnr .wrap_ttl .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_history .bnr .wrap_txt p {
+    margin-bottom: 108px;
+    font-size: 1.4rem;
+}
+.sec_history .bnr:hover .bg {
+    transform: none;
+}
+.sec_history .bnr .btn_more {
+    position: absolute;
+    bottom: 25px; right: 25px;
+    font-size: 1.4rem;
+}
+
+/*========================= sec_amakusa =========================*/
+
+.sec_amakusa {
+    padding-top: 180px;
+}
+.sec_amakusa .ttl {
+    margin: 0 50px 48px;
+    width: auto;
+    font-size: 4.3rem;
+}
+.sec_amakusa.opening .ttl div {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_amakusa .ttl .small {
+    font-size: 1.2rem;
+}
+.sec_amakusa .map {
+    margin: 0 2.667%;
+    width: 94.666%;
+}
+.sec_amakusa .wrap_txt {
+    margin: 0 50px;
+    width: auto;
+    min-height: auto;
+}
+.sec_amakusa .wrap_txt p {
+    padding-top: 0;
+    width: auto;
+    font-size: 1.4rem;
+}
+.sec_amakusa .bg {
+    display: none;
+}
+
+/*========================= sec_gallery =========================*/
+
+.sec_gallery {
+    padding: 88px 0;
+}
+.sec_gallery ul {
+    margin: 0 19px;
+    width: auto;
+}
+.sec_gallery ul li:after {
+    bottom: 12px; right: 12px;
+    width: 22px; height: 22px;
+}
+.sec_gallery ul li a {
+    top: 6px; right: 6px; bottom: 6px; left: 6px;
+}
+.sec_gallery ul li a:hover {
+    transform: none;
+}
+.sec_gallery .popup {
+    display: none;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 10000;
+}
+.sec_gallery .popup img {
+    max-width: 90%; max-height: 50%;
+}
+.sec_gallery .popup.act img {
+    max-width: 100%; max-height: 60%;
+}
+.sec_gallery .popup .caption {
+    right: 5%; left: 5%;
+    width: 90%; height: 20%;
+    font-size: 1.4rem;
+}
+.sec_gallery .popup .btn_close {
+    top: 24px; right: 16px;
+}
+
+/*========================= sec_history_page =========================*/
+
+.sec_history_page .ttl {
+    top: 48px; left: 50px;
+    transition: all 1s ease-in-out;
+}
+.sec_history_page.opening .ttl {
+    top: 56px;
+    left: 50px;
+    opacity: 0;
+}
+.sec_history_page .ttl div {
+    font-size: 3.2rem;
+}
+.sec_history_page .cont {
+    display: block;
+    position: relative;
+    top: auto; right: auto; bottom: auto; left: auto;
+    height: auto;
+    z-index: 100;
+}
+.sec_history_page .cont .wrap_year,
+.sec_history_page .cont .wrap_txt {
+    display: block;
+    width: auto;
+}
+.sec_history_page .cont .wrap_year {
+    position: relative;
+    margin: 0 50px;
+    padding: 285px 0 0;
+    z-index: 10;
+}
+.sec_history_page .cont .wrap_txt {
+    position: relative;
+    margin: 0 50px;
+    padding: 0 0 240px;
+    z-index: 10;
+}
+.sec_history_page .cont .wrap_year {
+    text-align: left;
+}
+.sec_history_page .cont .wrap_year .sttl {
+    margin-right: 0;
+    margin-bottom: 36px;
+    font-size: 3.6rem;
+}
+.sec_history_page.opening .cont .wrap_year .sttl {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_history_page .cont .wrap_txt .ssttl {
+    font-size: 2.4rem;
+    line-height: 1.4;
+}
+.sec_history_page .cont .wrap_txt p {
+    margin-right: 0;
+    font-size: 1.6rem;
+}
+.sec_history1 .wrap_ttl {
+    width: 320px;
+}
+.sec_history1 .wrap_ttl .pttl {
+    font-size: 6rem;
+}
+.sec_history1.opening .wrap_ttl .pttl {
+    transform: scale(1.07) rotate(-8deg);
+}
+.sec_history1 .wrap_ttl .pttl .small {
+    font-size: 1.4rem;
+}
+.sec_history1 .wrap_ttl p {
+    font-size: 1.4rem;
+}
+.sec_history_cont {
+    height: auto;
+}
+.sec_history_cont .bg {
+    position: absolute;
+    top: 0; right: 0; bottom: auto; left: 0;
+    padding-top: 100%;
+    width: 100%; height: auto;
+}
+.sec_history_page.opening .bg div {
+    transform: scale(1.15);
+}
+.sec_history2 {
+    background: #233065;
+}
+.sec_history3 {
+    background: #233765;
+}
+.sec_history4 {
+    background: #234165;
+}
+.sec_history5 {
+    background: #234965;
+}
+.sec_history6 {
+    background: #235165;
+}
+.sec_history7 {
+    background: #235865;
+}
+.sec_history8 {
+    background: #236065;
+}
+.sec_history1 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history2 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history3 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history4 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history5 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history6 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history7 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+.sec_history8 .bg div {
+    background: url("https://placehold.co/1920x1080") center no-repeat;
+    background-size: cover;
+}
+
+/*========================= sec_news_single =========================*/
+
+.sec_news_single {
+    margin: 0 50px 120px;
+    width: auto;
+}
+.sec_news_single .wrap_img {
+    margin: 0 -50px 100px;
+}
+.sec_news_single .logo {
+    transform: scale(.8);
+    transform-origin: 0;
+}
+.sec_news_single .pttl {
+    margin-bottom: 6px;
+    font-size: 2.7rem;
+}
+.sec_news_single .date {
+    margin-bottom: 64px;
+    font-size: 1rem;
+}
+.sec_news_single p {
+    font-size: 1.7rem;
+}
+.sec_news_single .wrap_nav {
+    margin: 0 -25px;
+    padding-top: 72px;
+}
+.sec_news_single .wrap_nav a {
+    width: 30%;
+    font-size: 1.4rem;
+}
+
+/*========================= sec_news_single =========================*/
+
+.sec_news_archive {
+    margin: 0 50px 120px;
+    width: auto;
+}
+.sec_news_archive .pttl {
+    padding-top: 96px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+.sec_news_archive .pttl .num {
+    padding-left: 2px;
+    font-size: 1rem;
+}
+.sec_news_archive section {
+    margin-bottom: 40px;
+    margin-right: -34px;
+}
+.sec_news_archive section a:hover {
+    transform: none;
+}
+.sec_news_archive section a .wrap_img {
+    width: 100px; height: 100px;
+}
+.sec_news_archive section a .ico_new {
+    font-size: 1.2rem;
+}
+.sec_news_archive section a .logo {
+    margin-bottom: 4px;
+    margin-left: 116px;
+    transform: scale(.6);
+}
+.sec_news_archive section a .sttl {
+    margin-bottom: 2px;
+    margin-left: 116px;
+    font-size: 1.7rem;
+}
+.sec_news_archive section a .date {
+    margin-left: 116px;
+    font-size: 1rem;
+}
+
+/*========================= sec_privacypolicy =========================*/
+
+.sec_privacypolicy {
+    margin: 0 50px 120px;
+    width: auto;
+}
+.sec_privacypolicy .pttl {
+    padding-top: 96px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+/*========================= sec_contact_form =========================*/
+
+.sec_contact_form {
+    width: auto;
+}
+.sec_contact_form .pttl {
+    padding-top: 96px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+.sec_contact_form .wpcf7-submit {
+    width: 100%;
+}
